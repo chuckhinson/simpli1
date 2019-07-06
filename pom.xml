@@ -58,7 +58,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>simpli1</repository>
+                    <repository>chuckhinson/simpli1</repository>
                     <tag>${project.version}</tag>
                     <contextDirectory>${project.basedir}</contextDirectory>
                 </configuration>
