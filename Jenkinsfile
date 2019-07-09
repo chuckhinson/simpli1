@@ -30,5 +30,15 @@ pipeline {
             }
         }
 
+        stage ('Start application') {
+            steps {
+            // Kill any old images
+                sh "docker stop simpli1 || true"
+                sh "docker run -d -p 8081:8080 --rm --name simpli1 chuckhinson/simpli1:0.1.0"
+            }
+        }
+
+
+
     }
 }
